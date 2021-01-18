@@ -1,0 +1,13 @@
+table, th, td {
+  border: 1px solid black;
+  padding: 5px
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.modal-lable{
+  width: 60%;
+  display:inline-block;
+}
