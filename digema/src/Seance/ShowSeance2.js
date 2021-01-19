@@ -135,7 +135,6 @@ class ShowSeance2 extends Component {
                         <td>{seance.ticketsAvaliable}</td>
 
                         <td>
-                          {/*console.log("eeeee" + JSON.stringify(seance.id))*/}
                           <Link
                             type="button"
                             className="btn btn-warning"

@@ -92,13 +92,13 @@ class BuyMovieTicket extends Component {
                   }}
                 >{`Seat${10 * i + j + 1}`}</button>
               ) : (
-                <button key={10 * i + j}
-                  className="NoFreeSeat"
-                  onClick={() => {
-                    this.NoFreeSeatClick(10 * i + j);
-                  }}
-                >{`Seat${10 * i + j + 1}`}</button>
-              )
+                  <button key={10 * i + j}
+                    className="NoFreeSeat"
+                    onClick={() => {
+                      this.NoFreeSeatClick(10 * i + j);
+                    }}
+                  >{`Seat${10 * i + j + 1}`}</button>
+                )
             );
         }
         //Create the parent and add the children
@@ -116,10 +116,12 @@ class BuyMovieTicket extends Component {
     return <div>{this.createTable()}</div>;
   }
 }
+
 BuyMovieTicket.propTypes = {
   id: PropTypes.number.isRequired,
   // seance: PropTypes.instanceOf(Object),
   getSeanceById: PropTypes.func.isRequired,
   editSeance: PropTypes.func.isRequired,
 };
+
 export default BuyMovieTicket;

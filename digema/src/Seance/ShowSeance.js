@@ -99,7 +99,6 @@ const ShowSeance = (props) => {
                       />
                     </td>
                     <td>
-                      {/*console.log("eeeee" + JSON.stringify(seance.id))*/}
                       <Link
                         type="button"
                         className="btn btn-warning"
